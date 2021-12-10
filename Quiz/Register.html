@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Register</title>
+    <link rel="stylesheet" href="./bootstrap-4.6.0-dist/css/bootstrap.min.css">
+</head>
+
+
+<body style="content: '';
+position: fixed;
+width: 100vw;
+height: 100vh;
+ background-image: linear-gradient(to right bottom,#031d25,#fff);
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+-webkit-background-size: cover;
+background-size: cover;
+
+">
+  
+    <div class="col-md-4 offset-4 mt-4 card">
+        <div class="card-body">
+        <h1 class="h1 text-center " style="color: teal;">Register</h1>
+        <form action = "./login.html" method="GET" name = "myForm" onsubmit = "localStorage">
+        
+        
+        <div class="form-group">
+        <tr>
+        <td align = "right">UserName</td>
+        <td><input type = "text" name = "Name" class="form-control" id="name" /></td>
+        </tr>
+        </div>
+        
+        <div class="form-group">
+        <tr>
+        <td align = "right">EMail</td>
+        <td><input type = "text" name = "EMail" class="form-control" id="email" /></td>
+        </tr>
+        </div>
+        
+        <div class="form-group">
+        <tr>
+        <td align = "right">Password</td>
+        <td><input type = "password" name = "password" class="form-control" id="userPw" /></td>
+        </tr>
+        </div>
+        <!-- <div class="form-group">
+          <tr>
+          <td align = "right">Gender
+          <input type = "radio" name = "gender" value="male" class="form-control" />Male
+          <input type = "radio" name = "gender" value="female" class="form-control" />female</td>
+          </tr>
+        </div>
+        -->
+        <div class="form-group">
+        <tr>
+        <td align = "right">Skills</td>
+        <td>
+        <select name = "Skills" class="form-control"  id="drop">
+        <option value = "-1" selected>Skills[Frontend/Backend]</option>
+        <option value = "1">Frontend</option>
+        <option value = "2">Backend</option>
+        <option value = "3">Fullstack</option>
+        </select>
+        </td>
+        </tr>
+        </div>
+        
+       <br/>  
+        <div class="form-group">
+        <tr>
+        <td align = "right"></td>
+        <td><input type = "submit" value = "Register" class="btn btn-outline-success btn-block"/></td>
+        </tr>
+        <div class="form-group">
+          <tr>
+          <td align = "right"></td>
+          <td><a href="./login.html" style="position: relative;left: 300px;top: 20px;">Please Login</a></td>
+          </tr>
+        </div>
+<!-- Form validation starts here -->
+
+        <script>
+        function validation(){
+                if(document.myForm.Name.value ==""){
+                    alert("Please provide any name!");
+                    document.myForm.Name.focus();
+                    return false;
+                } 
+
+                if(document.myForm.EMail.value ==""){
+                    alert("Please provide any name!");
+                    document.myForm.Name.focus();
+                    return false;
+                } 
+
+                if(document.myForm.userPw.value ==""){
+                    alert("Please provide your email!");
+                    document.myForm.Email.focus();
+                    return false;
+                } 
+                if( document.myForm.userPw.value == "" || isNaN( document.myForm.userPw.value ) ||
+                 document.myForm.userPw.value.length != 10 ) {
+ 
+                    alert( "Please provide strong password " );
+                    document.myForm.userPw.focus() ;
+                    return false;
+                    }
+                    if( document.myForm.Country.value == "-1" ) {
+                    alert( "Please provide your country!" );
+                    return false;
+                    }
+                    return( true );
+                    }
+
+                    var name = document.getElementById('name');
+                    var email = document.getElementById('email');
+                    var userpw = document.getElementById('password');
+                    var drop = document.getElementById('drop');
+
+                    function store() {
+    localStorage.setItem('name', name.value);
+    localStorage.setItem('email', email.value);
+    localStorage.setItem('phone', userPw.value);
+    localStorage.setItem('drop', drop.value);
+}
+
+function check() {
+var storedName = localStorage.getItem('name');
+var storedEmail = localStorage.getItem('email');
+var storedPass = localStorage.getItem('password');
+var storedDrop = localStorage.getItem('drop');
+}
+
+  // entered data from the login-form
+var userName = document.getElementById('userName');
+var userPw = document.getElementById('userPw');
+
+    // check if stored data from register-form is equal to data from login form
+    if(userName.value !== storedName || userPw.value !== storedPw) {
+        alert('ERROR');
+    }else {
+        alert('You are loged in.');
+    }
+
+        </script>
+        </form> 
+        </div>
+       </div>
+</body>
+</html>

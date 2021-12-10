@@ -1,0 +1,14 @@
+html,body,header,.view{
+	height: 100%;
+	font-family: 'josefin sans', sans-serif;
+	scroll-behavior: smooth;
+}
+
+.top-nav-collapse{
+	background-color: indigo;
+}
+
+.view{
+	background: url(1.jpg) no-repeat center;
+	background-size: cover;
+}

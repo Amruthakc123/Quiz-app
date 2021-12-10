@@ -1,0 +1,84 @@
+{
+  "Questions": [
+    {
+      "Quiz": "Q.1) What does HTML stand for?",
+      "option1": "Hyper Type Markup Language",
+      "option2": "Home Tool Markup Language",
+      "option3": "Hyper Link and Text Markup Language",
+      "option4": "Hyper Text Markup Language",
+      "answer": "Hyper Text Markup Language"
+    },
+    {
+      "Quiz": "Q.2) What does CSS stand for?",
+      "option1": "Colorful Style Sheets",
+      "option2": "Computer Style Sheets",
+      "option3": "Creative Style Sheets",
+      "option4": "Cascading Style Sheets",
+      "answer": "Cascading Style Sheets"
+    },
+    {
+      "Quiz": "Q.3) Which HTML attribute is used to define inline styles?",
+      "option1": "Style",
+      "option2": "Font",
+      "option3": "Class",
+      "option4": "Styles",
+      "answer": "Style"
+    },
+    {
+      "Quiz": "Q.4) Which is the correct CSS syntax?",
+      "option1": "body:color=black;",
+      "option2": "{body:color=black;}",
+      "option3": "body{color:black;}",
+      "option4": "{body;color:black;}",
+      "answer": "body{color:black;}"
+    },
+    {
+      "Quiz": "Q.5) What is the correct HTML tag for playing video files?",
+      "option1": "media",
+      "option2": "movie",
+      "option3": "video",
+      "option4": "mp4",
+      "answer": "video"
+    },
+    {
+      "Quiz": "Q.6) Which HTML tag is used to display the power in expression, i.e., (x2 - y2)?",
+      "option1":"<sup>",
+      "option2":"<sub>",
+      "option3":"<p>",
+      "option4":"None of the above",
+      "answer":"<sup>"
+    },
+    {
+      "Quiz": "Q.7) Which one of the following also known as Conditional Expression:",
+      "option1":"Alternative to if-else",
+      "option2":"Switch statement",
+      "option3":"If-then-else statement",
+      "option4":"immediate if",
+      "answer":"immediate if"
+    },
+    {
+      "Quiz": "Q.8) The 'function' and 'var' are known as:",
+      "option1":"Keywords",
+      "option2":"Data types",
+      "option3":"Declaration statements",
+      "option4":"Prototypes",
+      "answer":"Declaration statements"
+    },
+    {
+      "Quiz": "Q.9) What are the three important manipulations for a loop on a loop variable?",
+      "option1":"Updation, Incrementation, Initialization",
+      "option2":"Initialization, Testing, Incrementation",
+      "option3":"Testing, Updation, Testing",
+      "option4":"Initialization, Testing, Updation",
+      "answer":"Initialization, Testing, Updation"
+    },
+    {
+      "Quiz": "Q.10) How to create a checkbox in HTML?",
+      "option1":"<input type = 'checkbox'> ",
+      "option2":"<input type = 'button'>",
+      "option3":"<checkbox>",
+      "option4":"<input type = 'check'>",
+      "answer":"<input type = 'checkbox'>"
+    }
+  ]
+}

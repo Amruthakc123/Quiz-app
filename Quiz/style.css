@@ -1,0 +1,14 @@
+html,body,header,.view{
+	height: 100%;
+	font-family: 'josefin sans', sans-serif;
+	scroll-behavior: smooth;
+}
+
+.top-nav-collapse{
+	background-color: indigo;
+}
+
+.view{
+	background: url(http://www.stmarkwesthartford.com/wp-content/uploads/2021/08/hero-quiz-marketing.jpg) no-repeat center;
+	background-size: cover;
+}
